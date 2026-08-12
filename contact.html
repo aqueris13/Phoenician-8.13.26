@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Phoenician Holdings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1786046952">
+</head>
+<body>
+
+<header class="site-header scrolled">
+  <div class="inner">
+    <div class="logo"><a href="index.html">PHOENICIAN<br>HOLDINGS</a></div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="case-studies.html">Case Studies</a>
+      <a href="investors.html">Investors</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a href="contact.html" class="btn btn-white header-cta">Talk to Us</a>
+  </div>
+</header>
+
+<section style="padding-top:calc(88px + 72px);">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="eyebrow">Contact Us</span>
+        <h1>Let's talk.</h1>
+        <p style="color:var(--gray-600); font-size:17px; max-width:420px;">Whether you're exploring a sale, evaluating a partnership, or just want to learn more.</p>
+        <p style="margin-top:24px;"><strong>Email:</strong> <a href="mailto:hello@phoenician-holdings.com">hello@phoenician-holdings.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+15555555555">(555) 555-5555</a></p>
+      </div>
+      <div class="form-card">
+        <form id="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">PHOENICIAN<br>HOLDINGS</div>
+      <p>Acquiring, building, and operating car washes, backed by data at every step.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li></ul>
+    </div>
+    <div>
+      <h4>Work With Us</h4>
+      <ul><li><a href="contact.html">Sell Your Car Wash</a></li><li><a href="contact.html">Development</a></li><li><a href="investors.html">Investors</a></li></ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=1786046952"></script>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Thanks, this form is a demo and is not yet connected to send messages. Wire it up to your email service or a form backend (e.g. Formspree) when ready.');
+});
+</script>
+</body>
+</html>
